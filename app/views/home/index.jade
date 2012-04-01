@@ -1,0 +1,15 @@
+!!!
+html
+  head
+    title Salesman Test
+    != stylesheet_link_tag('bootstrap', 'style')
+    != javascript_include_tag('http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', 'bootstrap', 'rails', 'http://maps.googleapis.com/maps/api/js?sensor=false', 'application')
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.brand Salesman test
+          ul.nav
+            li
+              p.navbar-text Travelling salesman problem solved by Google Maps. Code at <a href='http://github.com'>GitHub</a>.
+    #map_canvas
